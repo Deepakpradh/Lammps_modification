@@ -46,7 +46,7 @@ FixArea::FixArea(LAMMPS *lmp, int narg, char **arg) :
 
 {
   if (strcmp(style,"area") != 0 && narg < 5)
-    error->all(FLERR,"Illegal fix dumbbell command: not enough args");
+    error->all(FLERR,"Illegal fix area command: not enough args");
   A0 = utils::numeric(FLERR,arg[3],false,lmp);
   Xi =utils::numeric(FLERR,arg[4],false,lmp);
   n =utils::numeric(FLERR,arg[5],false,lmp); //number of atoms per molecule 
